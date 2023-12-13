@@ -15,8 +15,8 @@ let doodlerLeftImg;
 
 let velocityX =0;
 let velocityY =0;
-let initialVelocityY=-8;
-let gravity = 0.5;
+let initialVelocityY=-6;
+let gravity = 0.2;
 
 
 let platformArray = [];
@@ -154,15 +154,6 @@ function placePlatforms(){
         height : platformheight
     }
     platformArray.push(platform);
-
-    // platform ={
-    //     img : platformImg,
-    //     x : boardwidth/2,
-    //     y : boardheight -150,
-    //     width : platformwidth,
-    //     height : platformheight
-    // }
-    // platformArray.push(platform);
 
     for (let i=0; i <6; i++){
         let randomX = Math.floor(Math.random() * boardwidth*3/4);
